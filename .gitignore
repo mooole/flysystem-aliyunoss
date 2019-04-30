@@ -1,0 +1,17 @@
+.DS_Store
+/vendor
+/coverage
+sftp-config.json
+composer.lock
+.subsplit
+.php_cs.cache
+.phpunit.result.cache
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
