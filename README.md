@@ -2,8 +2,8 @@
 <p align="center"> This is a Flysystem adapter for the Aliyun OSS ~2.3 </p>
 
 # Inspired By
-[overtrue/flysystem-qiniu](https://github.com/overtrue/flysystem-qiniu)
-[apollopy/flysystem-aliyun-oss](https://github.com/apollopy/flysystem-aliyun-oss)
+- [overtrue/flysystem-qiniu](https://github.com/overtrue/flysystem-qiniu)
+- [apollopy/flysystem-aliyun-oss](https://github.com/apollopy/flysystem-aliyun-oss)
 
 # Installation
 
@@ -88,7 +88,7 @@ edit the config file: config/filesystems.php
     'access_id'  => 'xxxxxxxxxxxx', // Aliyun OSS AccessKeyId
     'access_key' => 'xxxxxxxxxxxxxxxxxxxxxx', // Aliyun OSS AccessKeySecret
     'bucket'     => 'xxxxxxxxxx', // OSS bucket name
-    'endpoint'   => 'xxxxxxxxx', // OSS 外网节点或自定义外部域名
+    'endpoint'   => 'xxxxxxxxx', // OSS 节点或自定义外部域名
     'domain'     => 'http://static.demo.com/', // CDN domain
 ],
 ```
