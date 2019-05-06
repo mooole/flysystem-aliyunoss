@@ -80,16 +80,26 @@ bool $flysystem->putFile('file.md', 'contents');
 ```
 
 # for Laravel
+edit .env 
+> add aliyun oss config
+```
+OSS_ACCESS_ID=xxxxxxxxxxxx
+OSS_ACCESS_KEY=xxxxxxxxxxxxxxxxxxxxxx
+OSS_BUCKET=xxxxxxxxxx
+OSS_ENDPOINT=xxxxxxxxx
+OSS_DOMAIN=xxxxxxxxxxxx
+```
+
 edit the config file: config/filesystems.php
 > add config
 ```php
 'oss' => [
     'driver'     => 'oss',
-    'access_id'  => 'xxxxxxxxxxxx', // Aliyun OSS AccessKeyId
-    'access_key' => 'xxxxxxxxxxxxxxxxxxxxxx', // Aliyun OSS AccessKeySecret
-    'bucket'     => 'xxxxxxxxxx', // OSS bucket name
-    'endpoint'   => 'xxxxxxxxx', // OSS 节点或自定义外部域名
-    'domain'     => 'http://static.demo.com/', // CDN domain
+    'access_id'  => env('OSS_ACCESS_ID'), // Aliyun OSS AccessKeyId
+    'access_key' => env('OSS_ACCESS_KEY'), // Aliyun OSS AccessKeySecret
+    'bucket'     => env('OSS_BUCKET'), // OSS bucket name
+    'endpoint'   => env('OSS_ENDPOINT'), // OSS 节点或自定义外部域名
+    'domain'     => env('OSS_DOMAIN'), // CDN domain
 ],
 ```
 
